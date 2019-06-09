@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 
-class QuizQuestion extends Component{
+class QuizQuestion extends Component {
 
-    render(){
+    render() {
         return <main>
-        <section>
-          <p>{this.props.instructions_text}</p>
-        </section>
-        <section className="buttons">
-          <ul>
-          {this.props.quiz_question.answer_options[0]}
-          </ul>
-        </section>
-      </main>
+            <section>
+                <p>{this.props.quiz_question.instruction_text}</p>
+            </section>
+            <section className="buttons">
+                <ul>
+                    <li> {this.props.quiz_question.answer_options[0]}</li>
+                </ul>
+            </section>
+        </main>
     }
 }
 
